@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="868" viewBox="0 0 830 868" role="img" aria-labelledby="t d">
+<title id="t">Fig. 3, Cairn</title>
+<desc id="d">Figure 3, Cairn, open source · mit, exploded view. 1, cairn: The CLI: sets a project up and installs the hooks. 2, cairn-plugin: One agent plugin for Claude Code, Cursor and Codex. 3, cairn-core: MCP server, hook runners and the sensors that read the project’s decisions and invariants. 4, cairn-state: Typed schemas and read-only state I/O. 5, cairn-lens: Hovers and code lens in the editor for invariant and task references. Check loop: Agent writes a diff, then Sensors check at pre-commit, then Commit, then CI checks again, then Hook bypasses flagged. The sensors catch stubs and changes that contradict a recorded decision. Commits on main: 312 (since May 2026). Latest release: v0.33.0 (published July 2026). TypeScript files: 458 (across five packages). Computed 2026-10-10 at commit 7b771d2.</desc>
+<style>@font-face{font-family:LF-Embed;font-weight:400;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:LF-Embed;font-weight:500;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:LF-Embed;font-weight:600;src:url(data:font/woff2;base64,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) format('woff2')}
+svg{--ink:#111111;--ink2:#3D3D3B;--ink3:#6F6F6B;--rule:#D8D8D3;--plateTop:#FFFFFF;--plateSide:#F4F4F1;--signal:#B8301C;--onSignal:#FFFFFF}
+text{font-family:LF-Embed,sans-serif;font-feature-settings:'tnum' 1,'kern' 1}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}}
+@keyframes fade{from{opacity:0}}
+@keyframes draw{from{stroke-dashoffset:1}}
+@keyframes explode{from{transform:translateY(var(--c,0px))}}
+.rise{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+.fade{animation:fade .4s ease-out both}
+.draw{stroke-dasharray:1;stroke-dashoffset:0;animation:draw .6s cubic-bezier(.4,0,.2,1) both}
+.explode{animation:explode .75s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<path d="M0 20.5L830 20.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink)"/>
+<text x="0" y="50" class="fade"><tspan font-size="17" font-weight="600" letter-spacing="-0.25" style="fill:var(--signal)">Fig. 3</tspan><tspan font-size="17" font-weight="600" letter-spacing="-0.25" style="fill:var(--ink)"> — </tspan><tspan font-size="17" font-weight="600" letter-spacing="-0.25" style="fill:var(--ink)">Cairn</tspan><tspan font-size="17" font-weight="400" letter-spacing="-0.25" style="fill:var(--ink3)"> · Open source · MIT</tspan></text>
+<g class="fade" style="animation-delay:0.45s">
+<path d="M8 138L8 218" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M248 138L248 218" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M128 172L128 184" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M8 230L8 310" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M248 230L248 310" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M128 264L128 276" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M8 322L8 402" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M248 322L248 402" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M128 356L128 368" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M8 414L8 494" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M248 414L248 494" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M128 448L128 460" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+</g>
+<g class="explode" style="--c:-184px">
+<polygon points="8,496 128,530 128,538 8,504" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="128,530 248,496 248,504 128,538" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="8,496 128,462 248,496 128,530" stroke-width="1" style="fill:var(--plateTop);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="56,496 128,475.6 200,496 128,516.4" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+</g>
+<g class="explode" style="--c:-92px">
+<polygon points="8,404 128,438 128,446 8,412" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="128,438 248,404 248,412 128,446" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="8,404 128,370 248,404 128,438" stroke-width="1" style="fill:var(--plateTop);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="56,404 128,383.6 200,404 128,424.4" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+</g>
+<g class="explode" style="--c:0px">
+<polygon points="8,312 128,346 128,354 8,320" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="128,346 248,312 248,320 128,354" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="8,312 128,278 248,312 128,346" stroke-width="1" style="fill:var(--plateTop);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="56,312 128,291.6 200,312 128,332.4" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+</g>
+<g class="explode" style="--c:92px">
+<polygon points="8,220 128,254 128,262 8,228" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="128,254 248,220 248,228 128,262" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="8,220 128,186 248,220 128,254" stroke-width="1" style="fill:var(--plateTop);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="56,220 128,199.6 200,220 128,240.4" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+</g>
+<g class="explode" style="--c:184px">
+<polygon points="8,128 128,162 128,170 8,136" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="128,162 248,128 248,136 128,170" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="8,128 128,94 248,128 128,162" stroke-width="1" style="fill:var(--plateTop);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="56,128 128,107.6 200,128 128,148.4" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+</g>
+<path d="M254 128.5L299 128.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.6s"/>
+<circle cx="248" cy="128" r="2" class="fade" style="fill:var(--ink);animation-delay:0.6s"/>
+<g class="rise" style="animation-delay:0.65s">
+<circle cx="312" cy="128" r="11" style="fill:var(--signal)"/>
+<text x="312" y="132.55" text-anchor="middle"><tspan font-size="12.649999999999999" font-weight="600" style="fill:var(--onSignal)">1</tspan></text>
+</g>
+<path d="M254 220.5L299 220.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.66s"/>
+<circle cx="248" cy="220" r="2" class="fade" style="fill:var(--ink);animation-delay:0.66s"/>
+<g class="rise" style="animation-delay:0.71s">
+<circle cx="312" cy="220" r="11" style="fill:var(--signal)"/>
+<text x="312" y="224.55" text-anchor="middle"><tspan font-size="12.649999999999999" font-weight="600" style="fill:var(--onSignal)">2</tspan></text>
+</g>
+<path d="M254 312.5L299 312.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.72s"/>
+<circle cx="248" cy="312" r="2" class="fade" style="fill:var(--ink);animation-delay:0.72s"/>
+<g class="rise" style="animation-delay:0.77s">
+<circle cx="312" cy="312" r="11" style="fill:var(--signal)"/>
+<text x="312" y="316.55" text-anchor="middle"><tspan font-size="12.649999999999999" font-weight="600" style="fill:var(--onSignal)">3</tspan></text>
+</g>
+<path d="M254 404.5L299 404.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.78s"/>
+<circle cx="248" cy="404" r="2" class="fade" style="fill:var(--ink);animation-delay:0.78s"/>
+<g class="rise" style="animation-delay:0.83s">
+<circle cx="312" cy="404" r="11" style="fill:var(--signal)"/>
+<text x="312" y="408.55" text-anchor="middle"><tspan font-size="12.649999999999999" font-weight="600" style="fill:var(--onSignal)">4</tspan></text>
+</g>
+<path d="M254 496.5L299 496.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.84s"/>
+<circle cx="248" cy="496" r="2" class="fade" style="fill:var(--ink);animation-delay:0.84s"/>
+<g class="rise" style="animation-delay:0.89s">
+<circle cx="312" cy="496" r="11" style="fill:var(--signal)"/>
+<text x="312" y="500.55" text-anchor="middle"><tspan font-size="12.649999999999999" font-weight="600" style="fill:var(--onSignal)">5</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.7s">
+<text x="336" y="133"><tspan font-size="15" font-weight="600" letter-spacing="-0.15" style="fill:var(--ink)">cairn</tspan></text>
+<text x="336" y="152"><tspan font-size="13.5" font-weight="400" style="fill:var(--ink2)">The CLI: sets a project up and installs the hooks.</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.76s">
+<text x="336" y="225"><tspan font-size="15" font-weight="600" letter-spacing="-0.15" style="fill:var(--ink)">cairn-plugin</tspan></text>
+<text x="336" y="244"><tspan font-size="13.5" font-weight="400" style="fill:var(--ink2)">One agent plugin for Claude Code, Cursor and Codex.</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.82s">
+<text x="336" y="317"><tspan font-size="15" font-weight="600" letter-spacing="-0.15" style="fill:var(--ink)">cairn-core</tspan></text>
+<text x="336" y="336"><tspan font-size="13.5" font-weight="400" style="fill:var(--ink2)">MCP server, hook runners and the sensors that</tspan></text>
+<text x="336" y="354"><tspan font-size="13.5" font-weight="400" style="fill:var(--ink2)">read the project’s decisions and invariants.</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.88s">
+<text x="336" y="409"><tspan font-size="15" font-weight="600" letter-spacing="-0.15" style="fill:var(--ink)">cairn-state</tspan></text>
+<text x="336" y="428"><tspan font-size="13.5" font-weight="400" style="fill:var(--ink2)">Typed schemas and read-only state I/O.</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.94s">
+<text x="336" y="501"><tspan font-size="15" font-weight="600" letter-spacing="-0.15" style="fill:var(--ink)">cairn-lens</tspan></text>
+<text x="336" y="520"><tspan font-size="13.5" font-weight="400" style="fill:var(--ink2)">Hovers and code lens in the editor for invariant and task references.</tspan></text>
+</g>
+<path d="M0 572.5L830 572.5" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+<text x="0" y="598" class="fade" style="animation-delay:0.5s"><tspan font-size="11.5" font-weight="500" letter-spacing="1.15" style="fill:var(--ink3)">CHECK LOOP</tspan></text>
+<circle cx="83" cy="620.5" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.6s"/>
+<text x="83" y="646.5" text-anchor="middle" class="fade" style="animation-delay:0.6s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Agent writes a diff</tspan></text>
+<path d="M88.5 620.5L243.5 620.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.62s"/>
+<path d="M163.5 616.5L168.5 620.5L163.5 624.5" stroke-linecap="square" class="fade" stroke-width="1.75" style="fill:none;stroke:var(--signal);animation-delay:0.67s"/>
+<circle cx="249" cy="620.5" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.67s"/>
+<text x="249" y="646.5" text-anchor="middle" class="fade" style="animation-delay:0.67s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Sensors check</tspan></text>
+<text x="249" y="663.5" text-anchor="middle" class="fade" style="animation-delay:0.67s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">at pre-commit</tspan></text>
+<path d="M254.5 620.5L409.5 620.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.69s"/>
+<path d="M329.5 616.5L334.5 620.5L329.5 624.5" stroke-linecap="square" class="fade" stroke-width="1.75" style="fill:none;stroke:var(--signal);animation-delay:0.74s"/>
+<circle cx="415" cy="620.5" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.74s"/>
+<text x="415" y="646.5" text-anchor="middle" class="fade" style="animation-delay:0.74s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Commit</tspan></text>
+<path d="M420.5 620.5L575.5 620.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.76s"/>
+<path d="M495.5 616.5L500.5 620.5L495.5 624.5" stroke-linecap="square" class="fade" stroke-width="1.75" style="fill:none;stroke:var(--signal);animation-delay:0.81s"/>
+<circle cx="581" cy="620.5" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.81s"/>
+<text x="581" y="646.5" text-anchor="middle" class="fade" style="animation-delay:0.81s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">CI checks again</tspan></text>
+<path d="M586.5 620.5L741.5 620.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.83s"/>
+<path d="M661.5 616.5L666.5 620.5L661.5 624.5" stroke-linecap="square" class="fade" stroke-width="1.75" style="fill:none;stroke:var(--signal);animation-delay:0.88s"/>
+<circle cx="747" cy="620.5" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.88s"/>
+<text x="747" y="646.5" text-anchor="middle" class="fade" style="animation-delay:0.88s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Hook bypasses flagged</tspan></text>
+<text x="0" y="693.5" class="fade" style="animation-delay:0.8s"><tspan font-size="12.5" font-weight="400" style="fill:var(--ink3)">The sensors catch stubs and changes that contradict a recorded decision.</tspan></text>
+<path d="M0 712L830 712" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.4s"/>
+<g class="rise" style="animation-delay:0.5s">
+<text x="0" y="741.5"><tspan font-size="11.5" font-weight="500" letter-spacing="1.15" style="fill:var(--ink3)">COMMITS ON MAIN</tspan></text>
+<text x="0" y="785.5"><tspan font-size="40" font-weight="600" letter-spacing="-1.4" style="fill:var(--ink)">312</tspan></text>
+<text x="0" y="807.5"><tspan font-size="12.5" font-weight="400" style="fill:var(--ink2)">since May 2026</tspan></text>
+</g>
+<path d="M277.17 725.5L277.17 811.5" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+<g class="rise" style="animation-delay:0.62s">
+<text x="294.67" y="741.5"><tspan font-size="11.5" font-weight="500" letter-spacing="1.15" style="fill:var(--ink3)">LATEST RELEASE</tspan></text>
+<text x="294.67" y="785.5"><tspan font-size="40" font-weight="600" letter-spacing="-1.4" style="fill:var(--ink)">v0.33.0</tspan></text>
+<text x="294.67" y="807.5"><tspan font-size="12.5" font-weight="400" style="fill:var(--ink2)">published July 2026</tspan></text>
+</g>
+<path d="M553.83 725.5L553.83 811.5" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+<g class="rise" style="animation-delay:0.74s">
+<text x="571.33" y="741.5"><tspan font-size="11.5" font-weight="500" letter-spacing="1.15" style="fill:var(--ink3)">TYPESCRIPT FILES</tspan></text>
+<text x="571.33" y="785.5"><tspan font-size="40" font-weight="600" letter-spacing="-1.4" style="fill:var(--ink)">458</tspan></text>
+<text x="571.33" y="807.5"><tspan font-size="12.5" font-weight="400" style="fill:var(--ink2)">across five packages</tspan></text>
+</g>
+<path d="M0 826L830 826" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+<text x="830" y="843.5" text-anchor="end" class="fade" style="animation-delay:0.9s"><tspan font-size="11" font-weight="400" letter-spacing="0.22" style="fill:var(--ink3)">Computed 2026-10-10 · 7b771d2</tspan></text>
+</svg>

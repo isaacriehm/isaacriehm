@@ -1,0 +1,56 @@
+{
+  "systems": {
+    "claims": {
+      "label": "claims",
+      "commits": 36,
+      "authoredCommits": 36,
+      "testFiles": 773,
+      "sourceFiles": 1169,
+      "migrations": 0,
+      "firstCommit": "2026-10-06",
+      "lastCommit": "2026-10-07",
+      "activeDays": 2,
+      "publicFacts": null,
+      "stamp": {
+        "date": "2026-10-10",
+        "sha": "1e9ea66"
+      }
+    },
+    "portal": {
+      "label": "portal",
+      "commits": 66,
+      "authoredCommits": 66,
+      "testFiles": 0,
+      "sourceFiles": 275,
+      "migrations": 18,
+      "firstCommit": "2025-10-28",
+      "lastCommit": "2025-12-16",
+      "activeDays": 23,
+      "publicFacts": null,
+      "stamp": {
+        "date": "2026-10-10",
+        "sha": "f091c14"
+      }
+    },
+    "cairn": {
+      "label": "cairn",
+      "commits": 312,
+      "authoredCommits": 307,
+      "testFiles": 0,
+      "sourceFiles": 458,
+      "migrations": 0,
+      "firstCommit": "2026-05-02",
+      "lastCommit": "2026-10-06",
+      "activeDays": 33,
+      "publicFacts": {
+        "stars": 6,
+        "latestRelease": "v0.33.0",
+        "releasedOn": "2026-07-29"
+      },
+      "stamp": {
+        "date": "2026-10-10",
+        "sha": "7b771d2"
+      }
+    }
+  }
+}

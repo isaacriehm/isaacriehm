@@ -1,0 +1,69 @@
+{
+  "computedAt": "2026-10-04T12:00:00Z",
+  "profile": {
+    "lastCommitAt": "2026-10-04T09:00:00Z",
+    "minutesSinceLastCommit": 180,
+    "contributions12mo": 12000,
+    "privateContributions12mo": 11000,
+    "commitsThisMonth": 100,
+    "monthStart": "2026-10-01",
+    "stamp": {
+      "date": "2026-10-04",
+      "sha": "0000000"
+    }
+  },
+  "systems": {
+    "claims": {
+      "label": "claims",
+      "commits": 1000,
+      "authoredCommits": 1000,
+      "testFiles": 500,
+      "sourceFiles": 900,
+      "migrations": 0,
+      "publicFacts": null,
+      "stamp": {
+        "date": "2026-10-04",
+        "sha": "1111111"
+      },
+      "firstCommit": "2026-04-01",
+      "lastCommit": "2026-10-03",
+      "activeDays": 150
+    },
+    "portal": {
+      "label": "portal",
+      "commits": 50,
+      "authoredCommits": 50,
+      "testFiles": 0,
+      "sourceFiles": 200,
+      "migrations": 10,
+      "publicFacts": null,
+      "stamp": {
+        "date": "2026-10-04",
+        "sha": "2222222"
+      },
+      "firstCommit": "2025-10-06",
+      "lastCommit": "2025-12-16",
+      "activeDays": 30
+    },
+    "cairn": {
+      "label": "cairn",
+      "commits": 300,
+      "authoredCommits": 295,
+      "testFiles": 0,
+      "sourceFiles": 400,
+      "migrations": 0,
+      "publicFacts": {
+        "stars": 5,
+        "latestRelease": "v0.1.0",
+        "releasedOn": "2026-07-28"
+      },
+      "stamp": {
+        "date": "2026-10-04",
+        "sha": "3333333"
+      },
+      "firstCommit": "2026-05-01",
+      "lastCommit": "2026-07-28",
+      "activeDays": 60
+    }
+  }
+}
