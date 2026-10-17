@@ -1,0 +1,82 @@
+# Renders the profile figures from read-only GitHub data and commits them if they changed.
+#
+# Secrets (repository settings → Secrets and variables → Actions):
+#   PROFILE_READ_TOKEN  fine-grained PAT, read-only (Metadata + Contents), resource owner isaacriehm
+#   PROFILE_ORG_TOKENS  one read-only fine-grained PAT per other owner, since a fine-grained token
+#                       has a single resource owner: "DevPlusLLC=<token>" (semicolon-separated for more).
+#                       Optional for render: an owner without a usable token is skipped and its
+#                       figures keep their last-good values (dist/last-good.json). Required for the
+#                       privacy check, which fails if it cannot list an org's private repository names.
+#   PROFILE_SYSTEMS     label=owner/repo[@branch];...  (private repo names: secret, never committed)
+#   PROFILE_DENYLIST    comma-separated client and contact names the privacy check must not find
+#
+# The 12-month contribution total is read from the public contribution calendar
+# (no auth). The private share comes from contributionsCollection queried with
+# this workflow's own GITHUB_TOKEN (PROFILE_CONTRIB_TOKEN below), whose viewer
+# sees private contributions only as counts, and is published only when that
+# query's total agrees with the public total within 1%.
+#
+# The read token never pushes. The commit uses the workflow's own GITHUB_TOKEN,
+# which is scoped to this repository.
+
+name: render
+
+on:
+  schedule:
+    - cron: '17 13 * * *' # 06:17 Arizona time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run typecheck
+
+      - run: npm test
+
+      - name: Render
+        run: npm run render
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_READ_TOKEN }}
+          PROFILE_ORG_TOKENS: ${{ secrets.PROFILE_ORG_TOKENS }}
+          PROFILE_CONTRIB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_SYSTEMS: ${{ secrets.PROFILE_SYSTEMS }}
+
+      - name: Privacy check
+        run: npm run privacy
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_READ_TOKEN }}
+          PROFILE_ORG_TOKENS: ${{ secrets.PROFILE_ORG_TOKENS }}
+          PROFILE_DENYLIST: ${{ secrets.PROFILE_DENYLIST }}
+
+      - name: Publish as a single commit if changed
+        run: |
+          git add dist README.md
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          # Keep the profile repository at one commit: rebuild it as an orphan and replace main.
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout --orphan published
+          git add -A
+          git commit -q -m "Owner's manual profile"
+          git push --force origin published:main

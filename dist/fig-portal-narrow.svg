@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1225" viewBox="0 0 360 1225" role="img" aria-labelledby="t d">
+<title id="t">Fig. 2, Investor portal</title>
+<desc id="d">Figure 2, Investor portal, investment firm, exploded view. 1, Interface: Investor and admin screens for portfolios, holdings, valuations and documents, built in Next.js. 2, API: tRPC procedures, with Better Auth for sign-in. 3, Transactions: Validation and every write commit together, or not at all. 4, Data: PostgreSQL with Prisma, and documents in AWS S3. Distribution path: Distribution recorded, then Checked against current value, then Holdings, history and totals updated, then ROI and total return recalculated, then Monthly valuation history rebuilt. Commits: 66 (October to December 2025). Schema migrations: 18 (versioned SQL). TypeScript files: 275 (in the application). Computed 2026-10-17 at commit f091c14.</desc>
+<style>@font-face{font-family:LF-Embed;font-weight:400;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:LF-Embed;font-weight:500;src:url(data:font/woff2;base64,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) format('woff2')}
+@font-face{font-family:LF-Embed;font-weight:600;src:url(data:font/woff2;base64,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) format('woff2')}
+svg{--ink:#111111;--ink2:#3D3D3B;--ink3:#6F6F6B;--rule:#D8D8D3;--plateTop:#FFFFFF;--plateSide:#F4F4F1;--signal:#B8301C;--onSignal:#FFFFFF}
+@media (prefers-color-scheme:dark){svg{--ink:#FFFFFF;--ink2:#D8D8D3;--ink3:#9A9A95;--rule:#3D3D3B;--plateTop:#161616;--plateSide:#262625;--signal:#B8301C;--onSignal:#FFFFFF}.backdrop{display:none}}
+text{font-family:LF-Embed,sans-serif;font-feature-settings:'tnum' 1,'kern' 1}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}}
+@keyframes fade{from{opacity:0}}
+@keyframes draw{from{stroke-dashoffset:1}}
+@keyframes explode{from{transform:translateY(var(--c,0px))}}
+.rise{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+.fade{animation:fade .4s ease-out both}
+.draw{stroke-dasharray:1;stroke-dashoffset:0;animation:draw .6s cubic-bezier(.4,0,.2,1) both}
+.explode{animation:explode .75s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect class="backdrop" width="360" height="1225" fill="#FFFFFF"/>
+<path d="M0 14.5L360 14.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink)"/>
+<text x="0" y="42" class="fade"><tspan font-size="16" font-weight="600" letter-spacing="-0.24" style="fill:var(--signal)">Fig. 2</tspan><tspan font-size="16" font-weight="600" letter-spacing="-0.24" style="fill:var(--ink)"> — </tspan><tspan font-size="16" font-weight="600" letter-spacing="-0.24" style="fill:var(--ink)">Investor portal</tspan></text>
+<text x="0" y="62" class="fade"><tspan font-size="13.5" font-weight="400" style="fill:var(--ink3)">Investment firm</tspan></text>
+<g class="fade" style="animation-delay:0.45s">
+<path d="M63 141L63 213" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M243 141L243 213" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M153 171L153 183" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M63 224L63 296" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M243 224L243 296" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M153 254L153 266" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M63 307L63 379" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M243 307L243 379" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+<path d="M153 337L153 349" stroke-dasharray="2 3" stroke-width="1" style="fill:none;stroke:var(--ink3)"/>
+</g>
+<g class="explode" style="--c:-124px">
+<polygon points="63,381 153,411 153,418 63,388" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="153,411 243,381 243,388 153,418" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="63,381 153,351 243,381 153,411" stroke-width="1" style="fill:var(--plateTop);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="99,381 153,363 207,381 153,399" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+</g>
+<g class="explode" style="--c:-41px">
+<polygon points="63,298 153,328 153,335 63,305" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="153,328 243,298 243,305 153,335" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="63,298 153,268 243,298 153,328" stroke-width="1" style="fill:var(--plateTop);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="99,298 153,280 207,298 153,316" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+</g>
+<g class="explode" style="--c:42px">
+<polygon points="63,215 153,245 153,252 63,222" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="153,245 243,215 243,222 153,252" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="63,215 153,185 243,215 153,245" stroke-width="1" style="fill:var(--plateTop);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="99,215 153,197 207,215 153,233" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+</g>
+<g class="explode" style="--c:125px">
+<polygon points="63,132 153,162 153,169 63,139" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="153,162 243,132 243,139 153,169" stroke-width="1" style="fill:var(--plateSide);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="63,132 153,102 243,132 153,162" stroke-width="1" style="fill:var(--plateTop);stroke:var(--ink);stroke-linejoin:round"/>
+<polygon points="99,132 153,114 207,132 153,150" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+</g>
+<path d="M249 132.5L275 132.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.6s"/>
+<circle cx="243" cy="132" r="2" class="fade" style="fill:var(--ink);animation-delay:0.6s"/>
+<g class="rise" style="animation-delay:0.65s">
+<circle cx="287" cy="132" r="10" style="fill:var(--signal)"/>
+<text x="287" y="136.14" text-anchor="middle"><tspan font-size="11.5" font-weight="600" style="fill:var(--onSignal)">1</tspan></text>
+</g>
+<path d="M249 215.5L275 215.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.66s"/>
+<circle cx="243" cy="215" r="2" class="fade" style="fill:var(--ink);animation-delay:0.66s"/>
+<g class="rise" style="animation-delay:0.71s">
+<circle cx="287" cy="215" r="10" style="fill:var(--signal)"/>
+<text x="287" y="219.14" text-anchor="middle"><tspan font-size="11.5" font-weight="600" style="fill:var(--onSignal)">2</tspan></text>
+</g>
+<path d="M249 298.5L275 298.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.72s"/>
+<circle cx="243" cy="298" r="2" class="fade" style="fill:var(--ink);animation-delay:0.72s"/>
+<g class="rise" style="animation-delay:0.77s">
+<circle cx="287" cy="298" r="10" style="fill:var(--signal)"/>
+<text x="287" y="302.14" text-anchor="middle"><tspan font-size="11.5" font-weight="600" style="fill:var(--onSignal)">3</tspan></text>
+</g>
+<path d="M249 381.5L275 381.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.78s"/>
+<circle cx="243" cy="381" r="2" class="fade" style="fill:var(--ink);animation-delay:0.78s"/>
+<g class="rise" style="animation-delay:0.83s">
+<circle cx="287" cy="381" r="10" style="fill:var(--signal)"/>
+<text x="287" y="385.14" text-anchor="middle"><tspan font-size="11.5" font-weight="600" style="fill:var(--onSignal)">4</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.7s">
+<circle cx="10" cy="444" r="10" style="fill:var(--signal)"/>
+<text x="10" y="448.14" text-anchor="middle"><tspan font-size="11.5" font-weight="600" style="fill:var(--onSignal)">1</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.7s">
+<text x="28" y="448"><tspan font-size="14.5" font-weight="600" letter-spacing="-0.14" style="fill:var(--ink)">Interface</tspan></text>
+<text x="28" y="467"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Investor and admin screens for portfolios, holdings,</tspan></text>
+<text x="28" y="484.5"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">valuations and documents, built in Next.js.</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.76s">
+<circle cx="10" cy="510.5" r="10" style="fill:var(--signal)"/>
+<text x="10" y="514.64" text-anchor="middle"><tspan font-size="11.5" font-weight="600" style="fill:var(--onSignal)">2</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.76s">
+<text x="28" y="514.5"><tspan font-size="14.5" font-weight="600" letter-spacing="-0.14" style="fill:var(--ink)">API</tspan></text>
+<text x="28" y="533.5"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">tRPC procedures, with Better Auth for sign-in.</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.82s">
+<circle cx="10" cy="559.5" r="10" style="fill:var(--signal)"/>
+<text x="10" y="563.64" text-anchor="middle"><tspan font-size="11.5" font-weight="600" style="fill:var(--onSignal)">3</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.82s">
+<text x="28" y="563.5"><tspan font-size="14.5" font-weight="600" letter-spacing="-0.14" style="fill:var(--ink)">Transactions</tspan></text>
+<text x="28" y="582.5"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Validation and every write</tspan></text>
+<text x="28" y="600"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">commit together, or not at all.</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.88s">
+<circle cx="10" cy="626" r="10" style="fill:var(--signal)"/>
+<text x="10" y="630.14" text-anchor="middle"><tspan font-size="11.5" font-weight="600" style="fill:var(--onSignal)">4</tspan></text>
+</g>
+<g class="rise" style="animation-delay:0.88s">
+<text x="28" y="630"><tspan font-size="14.5" font-weight="600" letter-spacing="-0.14" style="fill:var(--ink)">Data</tspan></text>
+<text x="28" y="649"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">PostgreSQL with Prisma, and documents in AWS S3.</tspan></text>
+</g>
+<path d="M0 683.5L360 683.5" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+<text x="0" y="709" class="fade" style="animation-delay:0.5s"><tspan font-size="10.5" font-weight="500" letter-spacing="1.05" style="fill:var(--ink3)">DISTRIBUTION PATH</tspan></text>
+<circle cx="6" cy="731" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.6s"/>
+<text x="26" y="735.5" class="fade" style="animation-delay:0.6s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Distribution recorded</tspan></text>
+<path d="M6 736.5L6 763.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.62s"/>
+<path d="M2 747.5L6 752.5L10 747.5" stroke-linecap="square" class="fade" stroke-width="1.75" style="fill:none;stroke:var(--signal);animation-delay:0.67s"/>
+<circle cx="6" cy="769" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.67s"/>
+<text x="26" y="773.5" class="fade" style="animation-delay:0.67s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Checked against current value</tspan></text>
+<path d="M6 774.5L6 801.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.69s"/>
+<path d="M2 785.5L6 790.5L10 785.5" stroke-linecap="square" class="fade" stroke-width="1.75" style="fill:none;stroke:var(--signal);animation-delay:0.74s"/>
+<circle cx="6" cy="807" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.74s"/>
+<text x="26" y="811.5" class="fade" style="animation-delay:0.74s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Holdings, history and totals updated</tspan></text>
+<path d="M6 812.5L6 839.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.76s"/>
+<path d="M2 823.5L6 828.5L10 823.5" stroke-linecap="square" class="fade" stroke-width="1.75" style="fill:none;stroke:var(--signal);animation-delay:0.81s"/>
+<circle cx="6" cy="845" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.81s"/>
+<text x="26" y="849.5" class="fade" style="animation-delay:0.81s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">ROI and total return recalculated</tspan></text>
+<path d="M6 850.5L6 877.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.83s"/>
+<path d="M2 861.5L6 866.5L10 861.5" stroke-linecap="square" class="fade" stroke-width="1.75" style="fill:none;stroke:var(--signal);animation-delay:0.88s"/>
+<circle cx="6" cy="883" r="4.5" class="fade" stroke-width="1.5" style="fill:none;stroke:var(--ink);animation-delay:0.88s"/>
+<text x="26" y="887.5" class="fade" style="animation-delay:0.88s"><tspan font-size="13" font-weight="400" style="fill:var(--ink2)">Monthly valuation history rebuilt</tspan></text>
+<path d="M0 913.5L360 913.5" pathLength="1" class="draw" stroke-width="1" style="fill:none;stroke:var(--ink);animation-delay:0.4s"/>
+<g class="rise" style="animation-delay:0.5s">
+<text x="0" y="937"><tspan font-size="10.5" font-weight="500" letter-spacing="1.05" style="fill:var(--ink3)">COMMITS</tspan></text>
+<text x="0" y="971"><tspan font-size="30" font-weight="600" letter-spacing="-1.05" style="fill:var(--ink)">66</tspan></text>
+<text x="0" y="991"><tspan font-size="12" font-weight="400" style="fill:var(--ink2)">October to December 2025</tspan></text>
+</g>
+<path d="M0 1005.5L360 1005.5" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+<g class="rise" style="animation-delay:0.62s">
+<text x="0" y="1029"><tspan font-size="10.5" font-weight="500" letter-spacing="1.05" style="fill:var(--ink3)">SCHEMA MIGRATIONS</tspan></text>
+<text x="0" y="1063"><tspan font-size="30" font-weight="600" letter-spacing="-1.05" style="fill:var(--ink)">18</tspan></text>
+<text x="0" y="1083"><tspan font-size="12" font-weight="400" style="fill:var(--ink2)">versioned SQL</tspan></text>
+</g>
+<path d="M0 1097.5L360 1097.5" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+<g class="rise" style="animation-delay:0.74s">
+<text x="0" y="1121"><tspan font-size="10.5" font-weight="500" letter-spacing="1.05" style="fill:var(--ink3)">TYPESCRIPT FILES</tspan></text>
+<text x="0" y="1155"><tspan font-size="30" font-weight="600" letter-spacing="-1.05" style="fill:var(--ink)">275</tspan></text>
+<text x="0" y="1175"><tspan font-size="12" font-weight="400" style="fill:var(--ink2)">in the application</tspan></text>
+</g>
+<path d="M0 1189.5L360 1189.5" stroke-width="1" style="fill:none;stroke:var(--rule)"/>
+<text x="360" y="1207" text-anchor="end" class="fade" style="animation-delay:0.9s"><tspan font-size="10.5" font-weight="400" letter-spacing="0.21" style="fill:var(--ink3)">Computed 2026-10-17 · f091c14</tspan></text>
+</svg>

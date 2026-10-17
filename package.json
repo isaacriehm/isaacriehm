@@ -1,0 +1,26 @@
+{
+  "name": "github-profile",
+  "private": true,
+  "description": "Renders Isaac Riehm's GitHub profile README figures (\"The Owner's Manual\") from live, read-only GitHub data.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "render": "GITHUB_TOKEN=${GITHUB_TOKEN:-$(gh auth token)} node --env-file-if-exists=.env generator/src/main.ts",
+    "render:fixture": "node generator/src/main.ts --fixture",
+    "privacy": "GITHUB_TOKEN=${GITHUB_TOKEN:-$(gh auth token)} node --env-file-if-exists=.env generator/src/privacy-check.ts",
+    "test": "node --test 'generator/test/**/*.test.ts'",
+    "typecheck": "tsc -p tsconfig.json",
+    "rasterize": "node generator/tools/rasterize.ts"
+  },
+  "dependencies": {
+    "harfbuzzjs": "^1.6.2",
+    "subset-font": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.1",
+    "typescript": "^7.0.2"
+  }
+}
